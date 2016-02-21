@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <!-- <parameter name="webmail.url" value="" /> -->
+    <test name="CorrectLogin">
+        <classes>
+            <class name="com.bayamp.hulu.LoginTest" />
+            <class name="com.bayamp.hulu.InvalidPass" />
+            <class name="com.bayamp.hulu.EmptyUser" />
+            <class name="com.bayamp.hulu.PrivacyTest" />
+        </classes>
+    </test>
+</suite>
