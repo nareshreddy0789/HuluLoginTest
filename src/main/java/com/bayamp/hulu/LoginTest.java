@@ -25,8 +25,8 @@ public class LoginTest extends BaseTest {
         for (String winHandle : driver.getWindowHandles()) {
             driver.switchTo().window(winHandle);
         }
-        ((JavascriptExecutor) driver).executeScript("document.getElementById('login').value='nareshreddy1439@gmail.com'");
-        ((JavascriptExecutor) driver).executeScript("document.getElementById('password').value='komma1439'");
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('login').value='xxx@gmail.com'");
+        ((JavascriptExecutor) driver).executeScript("document.getElementById('password').value='xx1439'");
         driver.findElement(By.xpath("//div[@id='popup-body']/div/div[3]/div[5]/a/div")).click();
         Thread.sleep(4000);
         driver.switchTo().window(winHandleBefore);
